@@ -1,0 +1,102 @@
+html, body, #root {height: 100%}
+
+.main {
+    position: relative;
+    top: 50%;
+    border: 1px solid black;
+    margin: 0 auto;
+    height: 546px;
+    width: 410px;
+    transform: translate(0, -50%);
+}
+
+/* .header {
+    border: 1px solid red;
+} */
+
+.header .timer {
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0 10px 0;
+}
+
+.header .label {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px 20px;
+}
+
+.header button {
+    width: 70px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.header .label span {
+    font-size: 20px;
+    height: fit-content;
+    line-height: 40px;
+}
+
+.board {
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    margin: 5px;
+}
+
+.unit-wrapper {
+    position: relative;
+    text-align: center;
+    line-height: 74px;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+.unit-item {
+    height: 100%;
+}
+
+
+.result-container {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.result-restart {
+    margin-top: 30px;
+    width: 80px;
+    height: 40px;
+}
+
+.result-score {
+    font-size: 36px;
+    font-weight: bold;
+    color: #7B68EE;
+}
+
+.timer {
+    color: #7B68EE;
+}
+
+.rank-header, .rank-item {
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr;
+}
+
+.rank-header, .rank-item div {
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+}
+
+.rank-container {
+    height: inherit;
+    overflow: auto;
+}
